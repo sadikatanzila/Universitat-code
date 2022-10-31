@@ -1,0 +1,23 @@
+﻿
+
+.full_content {
+    position:relative;
+    left:0;
+    top:0;
+    height:auto;
+    padding:2px;
+    background-color:white;
+    border:solid medium black;
+
+
+}
+
+.insert_box {
+    position:relative;
+    height:auto;
+    padding:5px 5px 5px 40px;
+    font-size:medium;
+    font-family:'Times New Roman';
+    border:groove medium #b64545;
+    background-color:aliceblue;
+}

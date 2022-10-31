@@ -1,0 +1,644 @@
+.container {
+    width: 100%;
+}
+
+.menu {
+    background-image: url('../img/WebHeaderEU_New.png');
+    height: auto;
+}
+
+/*
+.navbar{
+    background-image: transparent !important;
+}
+.nav-item{
+	padding: 3px;
+}
+    */
+.links {
+    background-color: #1073ce;
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+    .links a {
+        text-decoration: none;
+        color:#fff;
+    }
+        .links a:hover {
+            color:#fff;
+        }
+    .links ul li {
+        margin:5px;
+    }
+/*Testing menu css start here*/
+.menu-area {
+    background: #1073ce;
+}
+/*d61a5e*/
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border: 0 solid transition!important;
+    border: 0 solid rgba(0,0,0,.15);
+    border-radius: 0;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.mainmenu a, .navbar-default .navbar-nav > li > a, .mainmenu ul li a, .navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 13px 12px;
+    font-family: 'Roboto',sans-serif;
+    display: block !important;
+}
+
+.mainmenu .active a, .mainmenu .active a:focus, .mainmenu .active a:hover, .mainmenu li a:hover, .mainmenu li a:focus, .navbar-default .navbar-nav > .show > a, .navbar-default .navbar-nav > .show > a:focus, .navbar-default .navbar-nav > .show > a:hover {
+    color: #fff;
+    background: #4CAF50;
+    outline: 0;
+    text-decoration: none;
+}
+/*==========Sub Menu=v==========*/
+.mainmenu .collapse ul > li:hover > a {
+    background: #4CAF50;
+}
+
+.mainmenu .collapse ul ul > li:hover > a, .navbar-default .navbar-nav .show .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .show .dropdown-menu > li > a:hover {
+    background: #4CAF50;
+}
+
+.mainmenu .collapse ul ul ul > li:hover > a {
+    background: #4CAF50;
+}
+
+.mainmenu .collapse ul ul, .mainmenu .collapse ul ul.dropdown-menu {
+    background: #1073ce;
+}
+    /*#1565C0*/
+    .mainmenu .collapse ul ul ul, .mainmenu .collapse ul ul ul.dropdown-menu {
+        background: #1E88E5;
+    }
+
+        .mainmenu .collapse ul ul ul ul, .mainmenu .collapse ul ul ul ul.dropdown-menu {
+            background: #64B5F6;
+        }
+
+/******************************Drop-down menu work on hover**********************************/
+.mainmenu {
+    background: none;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+    .mainmenu .collapse ul li:hover > ul {
+        display: block;
+    }
+
+    .mainmenu .collapse ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 250px;
+        display: none;
+    }
+        /*******/
+        .mainmenu .collapse ul ul li {
+            position: relative;
+        }
+
+            .mainmenu .collapse ul ul li:hover > ul {
+                display: block;
+            }
+
+        .mainmenu .collapse ul ul ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            min-width: 250px;
+            display: none;
+        }
+            /*******/
+            .mainmenu .collapse ul ul ul li {
+                position: relative;
+            }
+
+                .mainmenu .collapse ul ul ul li:hover ul {
+                    display: block;
+                }
+
+            .mainmenu .collapse ul ul ul ul {
+                position: absolute;
+                top: 0;
+                left: -100%;
+                min-width: 250px;
+                display: none;
+                z-index: 1;
+            }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav .show .dropdown-menu .dropdown-menu > li > a {
+        padding: 16px 15px 16px 35px;
+    }
+
+    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu > li > a {
+        padding: 16px 15px 16px 45px;
+    }
+}
+/*Testing menu css end here*/
+#topImage {
+    background-color: #1073ce;
+}
+
+.sliderImage {
+    height: 400px;
+}
+
+/*Top news*/
+.topNews {
+    background-color: #fec20f;
+    border-radius:2px;
+}
+#top marquee {
+    text-align:center;
+}
+ #top li {
+        color:#1a237e;
+        display:inline-block;       
+        font-size:20px;
+        text-decoration: none;
+        font: bold;
+    }
+.m {
+    color:#1a237e;
+}
+    .m:hover {
+        text-decoration:none;
+        color:white;
+    }
+/*new top news*/
+/*#top li{
+    display: inline-block;
+    height: 22px;
+    padding: 0 30px 0 30px;
+    font-family: Calibri;
+    top: 2px;
+    left: 0px;
+    color:red;
+}
+
+    #top a:hover {
+        color: #30ed0b;
+    }*/
+/*4 box style*/
+.boxResponsive {
+    text-align: center;
+    /*display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+        */
+    display:flex;
+    flex-flow:row wrap;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+}
+
+.box1 {
+    margin:10px;
+    height:80px;
+    background: #1073ce;
+    border-radius: 10px;
+    border: 1px solid #73AD21;
+    transition: all 1s;
+    /*vertical-align: middle;
+    line-height: 100px;*/
+    color: #FFF;
+    width: 150px;
+    display:grid;
+    align-items:center;
+    justify-content:center;
+}
+
+    .box1 .boxText a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .box1:hover {
+        transform: scale(1.1);
+    }
+
+.boxText {
+    overflow: hidden;
+}
+
+/* owl carosul for news and events */
+#owl-demo .item {
+    padding: 30px 0px;
+    margin: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/*owl date for events*/
+span {
+    display: block;
+}
+
+.newsItem {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0 0 40px;
+    width: 400px;
+}
+
+.dateBox {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    margin-right: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 11px;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 1s;
+    background: #fafafa; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 85%, #dddddd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(85%,#eeeeee), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 85%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#eeeeee 85%,#dddddd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#eeeeee 85%,#dddddd 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 85%,#dddddd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+    .dateBox:hover {
+        transform: scale(1.1);
+    }
+
+.day {
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #666;
+}
+
+.month {
+    color: #fff;
+    line-height: 12px;
+    background: #3DB5E8;
+    border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    box-shadow: 0px 1px 0px #098ec7;
+    -webkit-box-shadow: 0px 1px 0px #098ec7;
+    text-shadow: 0px 1px 0px #098ec7;
+}
+
+.year {
+    font-size: 9px;
+    line-height: 10px;
+    font-weight: normal;
+    border-radius: 0 0 2px 2px;
+    -webkit-border-radius: 0 0 2px 2px;
+}
+
+.dateAndTitle {
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+/*events image*/
+
+.eventImage {
+    height: 200px;
+    text-decoration:none;
+}
+
+/*notice */
+.noticeItem {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0 0 40px;
+}
+
+.vertical-line {
+    border-left: thick solid #FFF0F5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*Testing notice*/
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button .active {
+            background-color: #ccc;
+        }
+
+.tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/*chart*/
+#pieChart {
+    min-width:200px;
+}
+/*Faculty*/
+.figure a {
+    text-decoration:none;
+}
+.facultyName {
+    transition:all 1s;
+}
+    .facultyName:hover {
+        transform:scale(1.1);
+        color:#335ea3;
+    }
+    /*life and service*/
+.lifeAndService {
+    display: flex;
+    flex-flow:row wrap;
+    align-items:flex-start;
+    justify-content:center;
+    align-content:flex-start;
+}
+/*lifeAtEU*/
+.lifeAtEU {
+    width:65%;
+    margin:5px;
+    min-width:300px;
+}
+/*service*/
+.services {
+    width:30%;
+    margin:5px;
+    min-width:300px;
+}
+.serviceBox {
+    width:100%;
+    height: 35%;
+    margin: 5% 5% 0 0;
+    border-radius: 2px;
+    background-color: #EBA39E;
+    text-align: center;
+    transition: all 1s;
+}
+
+    .serviceBox:hover {
+        transform: scale(1.1);
+    }
+
+    .serviceBox h3 a {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 85%;
+        color: #fff;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%,50%);
+    }
+
+/*Main Campus pic*/
+
+#getstarted {
+    background: url("img/Slider_1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    position: relative;
+}
+
+    #getstarted .dark-overlay {
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+/*Footer Style*/
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+    .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5;
+    }
+
+        .site-footer hr.small {
+            margin: 20px 0;
+        }
+
+    .site-footer h6 {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 2px;
+    }
+
+    .site-footer a {
+        color: #737373;
+    }
+
+        .site-footer a:hover {
+            color: #3366cc;
+            text-decoration: none;
+        }
+.footerFlex {
+    display:flex;
+    flex-flow:row wrap;
+    align-items:flex-start;
+    justify-content:flex-start;
+    align-content:center;
+}
+.footer_info {
+    order:0;
+    min-width:200px;
+}
+.footer-links {
+    order:1;
+    margin:5px;
+    padding-left: 0;
+    list-style: none;
+     min-width:200px;
+}
+
+    .footer-links li {
+        display: block;
+    }
+
+    .footer-links a {
+        color: #737373;
+    }
+
+        .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+            color: #3366cc;
+            text-decoration: none;
+        }
+
+    .footer-links.inline li {
+        display: inline-block;
+    }
+
+.site-footer .social-icons {
+    text-align: right;
+}
+
+    .site-footer .social-icons a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 6px;
+        margin-right: 0;
+        border-radius: 100%;
+        background-color: #33353d;
+    }
+
+.copyright-text {
+    margin: 0;
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0;
+    }
+
+        .site-footer .copyright-text, .site-footer .social-icons {
+            text-align: center;
+        }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+    .social-icons li {
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+
+        .social-icons li.title {
+            margin-right: 15px;
+            text-transform: uppercase;
+            color: #96a2b2;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+    .social-icons a {
+        background-color: #eceeef;
+        color: #818a91;
+        font-size: 16px;
+        display: inline-block;
+        line-height: 44px;
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        margin-right: 8px;
+        border-radius: 100%;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+
+        .social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+            color: #fff;
+            background-color: #29aafe;
+        }
+
+    .social-icons.size-sm a {
+        line-height: 34px;
+        height: 34px;
+        width: 34px;
+        font-size: 14px;
+    }
+
+    .social-icons a.facebook:hover {
+        background-color: #3b5998;
+    }
+
+    .social-icons a.twitter:hover {
+        background-color: #00aced;
+    }
+
+    .social-icons a.linkedin:hover {
+        background-color: #007bb6;
+    }
+
+    .social-icons a.dribbble:hover {
+        background-color: #ea4c89;
+    }
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
+}

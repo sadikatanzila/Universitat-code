@@ -1,0 +1,62 @@
+/* Demo CSS - You do not need this css in your own slider */
+
+body{
+	font-family: "Open Sans", helvetica, arial;
+}
+
+pre {
+    font-family: "Source Code Pro" , monospace;
+    display: block;
+    padding: 0px;
+    margin: 0 0 0px;
+    font-size: 8px;
+    line-height: 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+
+
+    display: none;
+}
+
+h2{
+	font-size: 48px;
+}
+
+pre + h2{
+	margin-top: 0px;
+}
+
+#container{
+	max-width:620px;
+	margin:0 auto;
+	padding-bottom:0px;
+}
+
+#banner-fade,
+#banner-slide{
+	margin-bottom: 0px;
+}
+
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:5px;
+	background:#fff;
+	color:#000;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover {
+    background: #C0C0C0;
+    color: #000080;
+}
+
+ol.bjqs-markers li a {
+    visibility:hidden;
+}
+
+
+p.bjqs-caption {
+    background: rgba(255,255,255,0.5);
+}

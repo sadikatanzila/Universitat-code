@@ -1,0 +1,30 @@
+﻿ a:hover
+{
+   
+    color: red; 
+}
+
+
+#more
+{
+    font-weight: bold;
+    font-size: 15px; 
+    
+    text-decoration: underline;
+}
+#more a {
+            color: #0000FF;
+            font-size:medium;
+        }
+
+#more1
+{
+    font-weight: bold;
+    font-size: 15px; 
+    
+    text-decoration: underline;
+}
+#more1 a {
+            color: #0000FF;
+            font-size:medium;
+        }
