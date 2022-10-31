@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2B52315-E723-4C15-B9D5-5F2CD880297E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eastern_Uni.DAL</RootNamespace>
+    <AssemblyName>Eastern_Uni.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.7.1005\lib\45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcShiftDAL.cs" />
+    <Compile Include="AcSubjectDAL.cs" />
+    <Compile Include="AcTypesDAL.cs" />
+    <Compile Include="Addmission_LastDateDAL.cs" />
+    <Compile Include="Admission_StudentDAL.cs" />
+    <Compile Include="Admisssion_StdDAL.cs" />
+    <Compile Include="Album_ImageDAL.cs" />
+    <Compile Include="AlumniCommitteeDAL.cs" />
+    <Compile Include="AlumniDAL.cs" />
+    <Compile Include="Board_TrusteesDAL.cs" />
+    <Compile Include="ClubsDAL.cs" />
+    <Compile Include="Clubs_CoordinatorsDAL.cs" />
+    <Compile Include="Clubs_ExecutivesDAL.cs" />
+    <Compile Include="Clubs_FutureEventsDAL.cs" />
+    <Compile Include="news_events_VCDAL.cs" />
+    <Compile Include="CourseDAL.cs" />
+    <Compile Include="DbProviderHelper.cs" />
+    <Compile Include="EnumClass.cs" />
+    <Compile Include="EUBCDAL.cs" />
+    <Compile Include="EUBC_GroupDAL.cs" />
+    <Compile Include="EU_UpcomingEventsDAL.cs" />
+    <Compile Include="EU_WorkshopDAL.cs" />
+    <Compile Include="FacultyMembersDAL.cs" />
+    <Compile Include="FacultyTypeDAL.cs" />
+    <Compile Include="Faculty_DesignationDAL.cs" />
+    <Content Include="GlobalClass.cs" />
+    <Compile Include="GPA_RegistrationDAL.cs" />
+    <Compile Include="HRCan_TeachExpDAL.cs" />
+    <Compile Include="HRGlobalClass.cs" />
+    <Compile Include="HR_CandidateDAL.cs" />
+    <Compile Include="HR_CanEduDAL.cs" />
+    <Compile Include="HR_DepartmentDAL.cs" />
+    <Compile Include="HR_Ext_PostDAL.cs" />
+    <Compile Include="HR_JobCategoryDAL.cs" />
+    <Compile Include="HR_JobCircularDAL.cs" />
+    <Compile Include="HR_JobPostDAL.cs" />
+    <Compile Include="HR_JobTypeDAL.cs" />
+    <Compile Include="HR_MenuHeadWebDAL.cs" />
+    <Compile Include="HR_NationalityDAL.cs" />
+    <Compile Include="HR_SubjectDAL.cs" />
+    <Compile Include="HR_UserDAL.cs" />
+    <Compile Include="HR_WebCodeDAL.cs" />
+    <Compile Include="IQAC_UpcomingEventsDAL.cs" />
+    <Compile Include="LatestNewsDAL.cs" />
+    <Compile Include="MathOlympiadDAL.cs" />
+    <Compile Include="MenuHeadDAL.cs" />
+    <Compile Include="MenuPageWebDAL.cs" />
+    <Compile Include="MenuPermissionDAL.cs" />
+    <Compile Include="NewsLetterDAL.cs" />
+    <Compile Include="news_eventsDAL.cs" />
+    <Compile Include="Photo_AlbumDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TopNewsDAL.cs" />
+    <Compile Include="UserDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasternUni.BO\EasternUni.BO.csproj">
+      <Project>{96489e8e-5bef-4043-afbd-f2983d1424aa}</Project>
+      <Name>EasternUni.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
