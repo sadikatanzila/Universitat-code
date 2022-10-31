@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EUMO.master.cs" Inherits="Eastern_Uni.EUMO" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="CSS/Admission.css" rel="stylesheet" />
+    <title>EUMO</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+    
+    <div id="banner">
+        Content Management Studio <br />
+        of <br />
+        Eastern University 
+    </div>
+
+    <div id="menu">
+
+
+        <div id='cssmenu'>
+            <ul>
+                 <li class="has-sub"><a href='#'><span>EUMO Registration</span></a>
+                    <ul>
+                        <li id="Li3"><a href='RegistrationEUMO.aspx'><span>EUMO Registration</span></a></li>
+                        <li id="Li1"><a href='RegisteredStudents.aspx'><span>Registrated Students</span></a></li>
+                    </ul>
+
+                </li>
+
+
+             <!-- <li class="has-sub"><a href='#'><span>Math Olimpiard</span></a>
+                    <ul>
+                        
+                        <li id="Li1"><a href='Registration.aspx'><span>Student Regintration</span></a></li>
+                    </ul>
+
+                </li>
+
+                 -->
+                
+                
+                
+               
+                <li><a href="EUMO_login.aspx"><span>Log Out</span></a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div id="menu_detail">
+
+        </div>
+    </div>
+
+
+    <div id="content_place">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    <div id="footer">
+        <br />
+        <hr />
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved by EU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Developed by Eastern University IT</div>
+</body>
+</html>
+
