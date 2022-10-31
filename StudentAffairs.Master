@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentAffairs.master.cs" Inherits="Eastern_Uni.StudentAffairs1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="CSS/Admission.css" rel="stylesheet" />
+    <title>Student Affairs</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+    
+    <div id="banner">
+        Content Management Studio <br />
+        of <br />
+        Eastern University 
+    </div>
+
+    <div id="menu">
+
+
+        <div id='cssmenu'>
+            <ul>
+                
+              <li class="has-sub"><a href='#'><span>Student Affairs' Clubs</span></a>
+                    <ul>
+                        <li id="Li2"><a href='Admin_Clubs.aspx'><span>Clubs Info.</span></a></li>
+                        <li id="Li3"><a href='Admin_FutureEvents.aspx'><span>Future Events</span></a></li>
+                        <li id="Li4"><a href='Admin_Coordinators.aspx'><span>Coordinators</span></a></li>
+                         <li id="Li5"><a href='Admin_Executives.aspx'><span>Executives</span></a></li>
+                    </ul>
+
+                </li>
+                
+                
+                
+               
+                <li><a href="StudentAffairs_Login.aspx"><span>Log Out</span></a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div id="menu_detail">
+
+        </div>
+    </div>
+
+
+    <div id="content_place">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    <div id="footer">
+        <br />
+        <hr />
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved by EU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Developed by Eastern University IT</div>
+</body>
+</html>
