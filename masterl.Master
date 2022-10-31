@@ -1,0 +1,207 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterl.master.cs" Inherits="Eastern_Uni.masterl" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="CSS/masterpagel.css" rel="stylesheet" />
+    <link href="CSS/blink.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+        <script type="text/javascript">
+            function disableRightClick() {
+                if (event.button == 2) {
+                    alert('For Security Reason Right Click is Disabled')
+                }
+            }
+            document.onmousedown = disableRightClick
+</script>
+
+        <script class="secret-source">
+            function disableRightClick() {
+                if (event.button == 2) {
+                    alert('For Security Reason Right Click is Disabled')
+                }
+            }
+            document.onmousedown = disableRightClick
+            jQuery(document).ready(function ($) {
+
+                $('#banner-slide').bjqs({
+                    animtype: 'slide',
+                    height: 280,
+                    width: 785,
+                    responsive: true,
+                    randomstart: true
+
+                });
+
+            });
+          </script>
+
+
+        
+    </asp:ContentPlaceHolder>
+   
+</head>
+
+
+
+<body oncontextmenu="return false" >
+   
+    <div id="main_body">
+
+
+        <!-- header start here   -->
+        <div id="header">
+
+          
+                
+                <div id="middle" style="background-color: #C4C4C4;  left: 0px;">
+                    
+                        <a href="HomeEU.aspx" style="font-size: 35px; font-weight: bold; color: #FFFFFF; text-align: center;">
+                            
+                            
+                            <img src="Images/WebBanner.jpg"  style="z-index:100; text-align: center;" width="1000" height="205" alt="Welcome"/>
+                    
+                <!-- <a href="HomeEU.aspx"><img src="image/Other/WebBanner_Home_PC.png" style="z-index:100" />-->
+                    
+                     
+
+                 </a>
+                 
+                
+
+       
+
+
+            </div>
+            
+
+            <!--header bottom part goes here -->
+
+            <div id='leftmenu'>
+            <ul>
+                <li id="AdminHome"><a href='Admin_home.aspx'><span>Home</span></a></li>
+                <li class='has-sub' id="Information"><a href='#'><span>The Mission</span></a>
+                    <ul>
+                        <li id="TopMovingNews"><a href="Admin_TopNews.aspx"><span>Breaking News</span></a></li>
+                       <!--  <li><a href="Middle.aspx"><span>Middle Breaking News</span></a></li>
+                        <li><a href="Slider.aspx"><span>Slider Image</span></a></li>
+                        <li class="last"><a href="Advertisement.aspx"><span>Left Advertisement</span></a></li>
+                       -->
+                        <li id="NewsEvents"><a href='Admin_NewsEvents.aspx'><span>News & Events</span></a></li>
+                        <li id="NoticeBoard"><a href='Admin_NoticeBoard.aspx'><span>Student Notice Board</span></a></li>
+                         <li id="Media"><a href='Admin_Media.aspx'><span>Media</span></a></li>
+                        
+                    </ul>
+                </li>
+
+                <li class='has-sub' id="Collections"><a href='#'><span>About Bangladesh</span></a>
+                    <ul>
+                        <li id="NewsLetter"><a href="Admin_Newsletter.aspx"><span>News Letter</span></a></li>
+                        <li id="Journal"><a href="Admin_Journal.aspx"><span>Journal</span></a></li>
+                        
+                        
+                    </ul>
+                </li>
+                <li class="has-sub" id="AlumniId"><a href='#'><span>BD-UK Relation</span></a>
+                    <ul>
+                        <li id="AlmFac"><a href='Admin_Faculty.aspx'><span>Create Faculty</span></a></li>
+                        <li id="AlmSubj"><a href='Admin_Subject.aspx'><span>Create Subject</span></a></li>
+                        <li id="AlmShift"><a href='Admin_Shift.aspx'><span>Create Shift</span></a></li>
+                        <li id="AlmType"><a href='Admin_Types.aspx'><span>Create Types</span></a></li>
+                        <li id="AlumniReg"><a href='Admin_Alumni.aspx'><span>Alumni Registration Form</span></a></li>
+                    </ul>
+
+                </li>
+                 <li class="has-sub" id="Admission"><a href='#'><span>Consular</span></a>
+                    <ul>
+                        <li id="AdmissionResult"><a href='Admisson_Result.aspx'><span>Result Sumbit</span></a></li>
+                    </ul>
+
+                </li>
+
+                 <li class="has-sub" id="Course"><a href='#'><span>Commerce</span></a>
+                    <ul>
+                       
+                        <li id="CourseYear"><a href='Course_Year.aspx'><span>Year</span></a></li>
+                        <li id="CourseSemi"><a href='Course_Semister.aspx'><span>Semister</span></a></li>
+                        <li id="CourseDtl"><a href='Admin_CourseDtl.aspx'><span>Course Details</span></a></li>
+                    </ul>
+
+                </li>
+
+                 <li class="has-sub" id="Li1"><a href='#'><span>Media</span></a>
+                    <ul>
+                       
+                        <li id="Li2"><a href='Admin_Clubs.aspx'><span>Clubs Info.</span></a></li>
+                        <li id="Li3"><a href='Admin_FutureEvents.aspx'><span>Future Events</span></a></li>
+                        <li id="Li4"><a href='Admin_Coordinators.aspx'><span>Coordinators</span></a></li>
+                         <li id="Li5"><a href='Admin_Executives.aspx'><span>Executives</span></a></li>
+                    </ul>
+
+                </li>
+
+                <li class="has-sub" id="Li6"><a href='#'><span>Contact Us</span></a>
+                    <ul>
+                       
+                        <li id="Li7"><a href='StudentRegistration.aspx'><span>Registration Form</span></a></li>
+                        <li id="Li8"><a href='StdReg_Searching.aspx'><span>Searching page</span></a></li>
+                    </ul>
+
+                </li>
+                 
+                
+            </ul>
+                <div style="display:none;">
+                <asp:Label ID="lblUser" runat="server" Text="Admin" ForeColor="#F49521"></asp:Label>
+  </div>
+        </div>
+
+
+        </div>
+
+        
+        <!-- middle part goes here -->
+
+        <div id="middle_body" style="top: -10px;">
+
+
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+          
+
+
+        </div>
+
+
+
+
+
+          <!-- foooter part here  -->
+        <div id="footer" style="border-top:solid thick white; top: -1px;">
+
+            
+
+          
+
+            <div style="position:relative;float:left;height:29px; width:980px; top: 10px; left: 10px;padding-top:10px;border-top:solid thin #0d1fde; border-top-color: #FFFFFF;">
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><span style="color:white;">Welcome to Bangladesh</span></strong></div>
+
+         
+            
+        </div>
+
+
+    </div>
+    
+</body>
+
+</html>

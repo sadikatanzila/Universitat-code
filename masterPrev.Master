@@ -1,0 +1,452 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPrev.Master.cs" Inherits="Eastern_Uni.masterPrev" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="CSS/masterpage.css" rel="stylesheet" />
+    <link href="CSS/blink.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+        <script type="text/javascript">
+            function disableRightClick() {
+                if (event.button == 2) {
+                    alert('For Security Reason Right Click is Disabled')
+                }
+            }
+            document.onmousedown = disableRightClick
+</script>
+
+        <script class="secret-source">
+            function disableRightClick() {
+                if (event.button == 2) {
+                    alert('For Security Reason Right Click is Disabled')
+                }
+            }
+            document.onmousedown = disableRightClick
+            jQuery(document).ready(function ($) {
+
+                $('#banner-slide').bjqs({
+                    animtype: 'slide',
+                    height: 280,
+                    width: 814,
+                    responsive: true,
+                    randomstart: true
+
+                });
+
+            });
+          </script>
+
+
+        
+    </asp:ContentPlaceHolder>
+   
+</head>
+
+
+
+<body oncontextmenu="return false" >
+   
+    <div id="main_body">
+
+
+        <!-- header start here   -->
+        <div id="header">
+
+            <!--header toppest part goes here 
+            <asp:Label ID="lblBlink" runat="server" Text="Label" style="font-weight: bold; color: #FFFF00"></asp:Label>
+             
+     <label  id="BlinkingLbl" style="font-weight: bold; color: #FFFF00; text-decoration:blink;">Breaking News :</label>
+
+                -->
+
+            <div id="top" class="news_marquee"  >
+                
+
+                <marquee  onmouseover="this.stop();" onmouseout="this.start();" behaviour="scroll" direction="left" scrollamount="5"  >
+   <a class="m" href="Admission_Overview.aspx"><asp:Label ID="Label_6" runat="server" Text=""></asp:Label></a> &nbsp; 
+ 
+    | &nbsp  
+                   
+                 
+
+             
+ 
+
+
+
+<!--  
+     
+    <a  class="m" href="Admission_PResult.aspx"><asp:Label ID="Label_9" runat="server" Text=""></asp:Label></a>&nbsp
+
+
+| &nbsp  
+ 
+
+    
+   
+
+
+
+
+
+
+     <a  class="m" href="Current_AddmissionNews1.aspx"><asp:Label ID="Label_7" runat="server" Text=""></asp:Label></a> &nbsp; 
+                 |&nbsp 
+
+    
+      
+
+
+<a  class="m" href="Current_AddmissionNews4.aspx"><asp:Label ID="Label5" runat="server" Text=""></asp:Label></a> &nbsp;   
+                       
+               | &nbsp 
+
+        <a class="m" href="eumo2015.aspx"><asp:Label ID="lbltop2" runat="server" Text="" ></asp:Label></a>&nbsp 
+|   
+  <a class="m" href="Admission_PResult.aspx"><asp:Label ID="Label3" runat="server" Text=""></asp:Label></a>&nbsp;
+           | &nbsp    
+
+
+      
+ 
+ -->        
+        
+                    
+         
+         
+<a  class="m" ><asp:Label ID="Label15" runat="server" Text="Admission Office Open on Friday & Holidays also"></asp:Label></a> &nbsp;
+                    
+                     | &nbsp<a  class="m" href="Current_AddmissionNews2.aspx"><asp:Label ID="Label1" runat="server" Text=""></asp:Label></a> &nbsp;
+                    | &nbsp<a  class="m" href="Current_AddmissionNews3.aspx"><asp:Label ID="Label2" runat="server" Text=""></asp:Label></a> &nbsp; 
+                    
+                     | &nbsp<a  class="m" href="bkash_payment.aspx"><asp:Label ID="Label4" runat="server" Text=""></asp:Label></a>&nbsp;
+                     | &nbsp
+
+                
+                        
+                     
+       <a class="m" href="Career_LO.aspx"><asp:Label ID="lbltop1" runat="server" Text=""></asp:Label></a>&nbsp
+                     | &nbsp                             
+   <a class="m" href="TopnewsLink1.aspx"><asp:Label ID="lbltop5" runat="server" Text="" ></asp:Label></a>&nbsp     
+     | &nbsp <a class="m" href="BrkNews1.aspx"><asp:Label ID="lbltop6" runat="server" Text="" ></asp:Label></a>&nbsp  
+                     <!--
+                     
+                    
+                    
+                     | &nbsp<a  class="m" href="TopNews3.aspx"><asp:Label ID="Label6" runat="server" Text=""></asp:Label></a> &nbsp  --></marquee>
+
+
+                
+
+            </div>
+
+        <!--    <div id="side_top">
+
+                <a href="#">
+                    <img src="image/Other/flogo.jpg" height="22px" width="19px" /></a>
+
+                <a href="#">
+                    <img src="image/Other/in.jpg" height="22px" width="19px"/></a>
+                <a href="#">
+                    <img src="image/Other/tlogo.png" height="22px" width="19px"/></a>
+
+                
+                <a href="#">
+                    <img src="image/Other/plus.jpg" height="22px" width="19px"/></a>
+
+            </div>-->
+
+            <!-- header middle part goes here  -->
+           <!-- <div id="middle"  style="background-image: url('image/Other/Banner.jpg');" > -->
+                
+                <div id="middle" style="background-color: #0099FF;  left: 0px;">
+                    
+                        <a href="HomeEU.aspx" style="font-size: 35px; font-weight: bold; color: #FFFFFF; text-align: center;">
+                            
+                            
+                            <img src="image/Other/WebBanner06Nov2013.jpg"  style="z-index:100; text-align: center;" width="1000" height="170" alt="Welcome to Eastern University"/>
+                    
+                <!-- <a href="HomeEU.aspx"><img src="image/Other/WebBanner_Home_PC.png" style="z-index:100" />-->
+                    
+                     
+
+                 </a>
+                 
+                <div id="top_right_bar" style="z-index:1000; right: 165px; margin-top: 0px; ">
+                    <a href="HomeEU.aspx" style="font-weight: bold" Homet-weight: bold">Home</a> &nbsp|&nbsp
+                    <a href="https://www.google.com/a/easternuni.edu.bd/ServiceLogin?service=mail&passive=true&rm=false&continue=http://mail.google.com/a/easternuni.edu.bd/&ltmpl=default&ltmplcache=2" style="font-weight: bold">Webmail</a> &nbsp|&nbsp
+                    <a href="http://old.easternuni.edu.bd:8080/staffs/_login.aspx" style="font-weight: bold">Faculty Login</a> &nbsp|&nbsp
+                    <a href="http://old.easternuni.edu.bd:8080/student/_login.aspx" style="font-weight: bold">Student Login</a> &nbsp|&nbsp
+                    <a href="Contact Us.aspx" style="font-weight: bold">Contact</a> &nbsp|&nbsp
+                    <a href="http://gsdl.easternuni.edu.bd/greenstone/cgi-bin/library.cgi" style="font-weight: bold">Publications</a>
+                    <!-- <strong>Search</strong> &nbsp-->
+                      
+                    
+                    
+
+               
+                  <!--  <input id="Search" type="text" style="position: absolute; top: 0px; left: 418px; width: 103px; height:15px;" /> 
+                  <input id="Go_button" type="button" value="Go" style="position: absolute; top: 0px; left: 535px; width: 41px; height:23px" /> -->
+
+                </div>
+
+       <div id="top_right_barN" style="z-index:1000; right: 132px; margin-top: 0px; ">
+                     <a href="https://www.facebook.com/">
+                    <img src="image/Other/facebook.png" height="20px" width="19px" /></a>
+
+                </div>
+
+<div id="top_right_barN1" style="z-index:1000; right: 132px; margin-top: 0px; ">
+                      <a href="https://www.linkedin.com/">
+                    <img src="image/Other/linkedin.png" height="20px" width="19px"/></a>
+
+                </div>
+
+<div id="top_right_barN2" style="z-index:1000; right: 132px; margin-top: 0px; ">
+                      <a href="https://twitter.com/">
+                    <img src="image/Other/twitter.png" height="20px" width="19px"/></a>
+
+                </div>
+
+
+<div id="top_right_barN3" style="z-index:1000; right: 132px; margin-top: 0px; ">
+                      <a href="https://plus.google.com/">
+                    <img src="image/Other/google_plus_bloggiks.png" height="18px" width="16px"/></a>
+
+                </div>
+
+
+            </div>
+            
+
+            <!--header bottom part goes here -->
+
+            <div id="bottom">
+                                           <a href="Prospective Students.aspx">Prospective Students</a>&nbsp&nbsp|
+                                  <a href="Current Students.aspx">Current Students</a>&nbsp&nbsp|
+                               <!--   <a href="Faculty n staffs.aspx">Faculty & Staffs</a>&nbsp&nbsp|
+                                    <a href="AlumniEU.aspx">Alumni</a>&nbsp&nbsp|-->
+                                  
+                <a href="AlumniStd.aspx">Alumni</a>&nbsp&nbsp|
+                             <!--     <a href="Visitors.aspx">Visitor</a>&nbsp&nbsp|-->
+                                  <a href="PhotoGallery.aspx">Photo Gallery</a>&nbsp&nbsp<!--|
+                                  <a href="Admins/frmLoginPage.aspx">Admin Section</a>-->
+                <div id="right_corner" >
+
+                   <!-- 
+                <marquee behavior ="alternate" onmouseover="this.stop(); " onmouseout="this.start();">
+                          --> 
+                    <marquee  onmouseover="this.stop();" onmouseout="this.start();" behaviour="scroll" direction="left" scrollamount="5"  >
+           
+                       <!--    &nbsp<a class="m" href="TopNews4.aspx"><asp:Label ID="lbltop4" runat="server" Text="" ></asp:Label></a>&nbsp
+                    
+   | &nbsp
+                                
+
+ 
+                              <a class="m" href="RegistrationPoetry.aspx"><asp:Label ID="lbltop3" runat="server" Text="" ></asp:Label></a>&nbsp
+
+
+                      
+  | &nbsp
+
+ 
+
+                           
+-->
+  
+       
+            
+      
+               <!--
+                  
+                   
+                      | &nbsp<a class="m" href="BrkNews2.aspx"><asp:Label ID="lbltop7" runat="server" Text="" ></asp:Label></a>&nbsp 
+                                             
+   
+-->
+<!--
+                                    
+    
+| &nbsp<a class="m" href="BrkNews3.aspx"><asp:Label ID="lbltop8" runat="server" Text="" ></asp:Label></a>&nbsp           
+| &nbsp<a class="m" href="BrkNews4.aspx"><asp:Label ID="lbltop9" runat="server" Text="" ></asp:Label></a>&nbsp
+| &nbsp<a class="m" href="BrkNews5.aspx"><asp:Label ID="lbltop10" runat="server" Text="" ></asp:Label></a>&nbsp                                     
+                        -->
+               </marquee>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        
+        <!-- middle part goes here -->
+
+        <div id="middle_body">
+
+
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+          
+
+
+        </div>
+
+
+
+
+
+          <!-- foooter part here  -->
+        <div id="footer" style="border-top:solid thick white; top: -1px;">
+
+            
+
+            <div class="position" style="width:185px">
+                  
+                <strong>Contact INFO</strong><br /><br />
+                        House 26, Road 5<br />
+                        Dhanmondi, Dhaka-1205<br />
+                        Phone:+88029676031-5<br />
+                        Fax: +8802967 5981<br />
+                        Email:registrar@easternuni.edu.bd <br />
+                       <!-- Copyright@2013<br />
+                        Eastern University<br />
+                        All rights reserved.-->
+                
+                                 
+                
+
+            </div>
+
+            <div class="position">
+                <strong>About EU</strong>
+                <br />
+                <br />
+                <a href="AboutEU_Profile.aspx">EU Profile</a>
+                <br />
+                <a href="AboutEU_BT.aspx">Board of Trustees</a>
+                <br />
+                <a href="Administration_OC.aspx">Message From the Chairman</a>
+                <br />
+                <a href="Administration_OVC.aspx">Message From the Vice-Chancellor</a>
+                <br />
+                <a href="AboutEU_Linkage.aspx">International Academic Linkages</a>
+               
+
+                <br />
+                <a href="AboutEU_Advisors.aspx">Internatinal Advisors</a>
+                <br />
+                <a href="Campus Map.aspx">Campus Map</a>
+                <br />
+                <a href="Contact Us.aspx">Contact Us</a>
+                <br />
+                <br />
+               
+            </div>
+
+            <div class="position">
+
+                 <strong>Admission</strong>
+                <br />
+                <br />
+                <a href="Admission_Overview.aspx">Overview</a>
+                <br />
+                <a href="Admission_WEU.aspx">Why Study at EU</a>
+                <br />
+                <a href="Admission_UA.aspx">Undergraduate Admission</a>
+                <br />
+                <a href="Admission_GA.aspx">Graduate Admission</a>
+                <br />
+                <a href="Admission_TF.aspx">Tution and Fees</a>
+                <br />
+                <a href="Admission_FAidSch.aspx">Financial Aid & Scholarship</a>
+                <br />
+               
+                <br />
+                <br />
+                 <br />
+            <!--    <a href="Contact Us"><span style="font-size:larger;color:#c34500;">Contact Us</span></a>-->
+                
+           </div>
+
+            <div class="position">
+
+
+                 <strong>Academics</strong>
+                <br />
+                <br />
+                <a href="Academics_Council.aspx">Academic Councils</a>
+                <br />
+                <a href="Academics_Sys.aspx">The Academic Systems</a>
+                <br />
+                <a href="Academics_Rules.aspx" >Academic Rules & Procedures</a>
+                <br />
+                <a href="Academics_Reg.aspx" >Registration Procedures</a>
+                <br />
+                <a href="Academics_ClsAtd.aspx" >Rules of Class Attendance</a>
+                <br />
+                 <a href="Academics_Exm.aspx" >Tests and Exams</a>
+                <br />
+                <a href="Academics_Std.aspx" >Academic Standing of a Student</a>
+                  <br />          
+                <a href="Academics_Degree.aspx" >Degree Requirements</a>
+                 <br />          <a href="Academics_UP.aspx">Undergraduate Programs</a>
+                       <br />    <a href="Academics_GP.aspx">Graduate Programs</a>            
+                          
+                           
+                            
+                             
+
+            </div>
+
+            <div class="position">
+
+
+                <strong>Faculties</strong>
+                <br />
+                <br />
+                
+              
+                <a href="Arts_Faculty.aspx">Faculty of Arts</a>
+                <br />
+                <a href="BBA_Faculty.aspx">Faculty of Business Administration</a>
+                <br />
+                <a href="Eng_Faculty.aspx">Faculty of Engineering
+                <br />
+                <a href="Law_Faculty.aspx">Faculty of Law</a>
+               <!-- <br />
+
+                <a href="Alumni"><strong>Alumni </strong></a>
+                <br />
+                 <a href="Newsletter.aspx"><strong>Newsletter</strong></a>
+                <br />
+                 <a href="Career_WEU.aspx"><strong>Career Oppurtunity</strong></a>
+                <br />
+                 <a href="Life_Campus_SC.aspx"><strong>EU Clubs</strong></a>-->
+                
+            </div>
+          
+
+            <div style="position:relative;float:left;height:29px; width:980px; top: 60px; left: 10px;padding-top:10px;border-top:solid thin #0d1fde; ">
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><span style="color:white;">Copyright @Eastern University  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Powered By EUIT</span></strong></div>
+
+         
+            
+        </div>
+
+
+    </div>
+    
+</body>
+
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
