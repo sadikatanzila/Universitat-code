@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HR_AdminHome.master.cs" Inherits="Eastern_Uni.HR_AdminHome" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+    <head id="Head1" runat="server">
+    <title>Eastern University HR</title>
+   
+    <link rel="stylesheet" href="CSS/HRcustom.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/HRstyle_home.css" type="text/css" />
+        <link rel="stylesheet" href="CSS/HRddsmoothmenu.css" type="text/css" />
+    
+    <script type="text/javascript" src="js/HRjquery.min.js"></script>    
+    <script type="text/javascript" src="js/HRddsmoothmenu.js"></script>
+    <script type="text/javascript">
+        ddsmoothmenu.init({
+            mainmenuid: "smoothmenu",
+            orientation: 'h',
+            classname: 'ddsmoothmenu',
+            contentsource: "markup"
+        })
+	</script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+         
+            <div id="smoothmenu" class="ddsmoothmenu" style="width: 99.6%">
+		        <ul>
+                   
+			        <asp:Literal ID="tempHtmlTable" runat="server"> </asp:Literal>
+		        </ul>
+		        <div style="clear: both;"> </div>
+	        </div>
+            <div style="display:none;">
+                <asp:Label ID="lblUser" runat="server" Text="Admin" ForeColor="#F49521"></asp:Label>
+            </div>
+            <asp:ContentPlaceHolder ID="ViewContentPlace" runat="server"> </asp:ContentPlaceHolder>
+	    </div>
+    </form>
+</body>
+</html>

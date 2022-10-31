@@ -1,0 +1,577 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="Eastern_Uni.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+      <title>Eastern University</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/Header/logo.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <!-- owl carousel css -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/owlcarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/owlcarousel/css/owl.theme.default.min.css" />
+    <!-- owl carousel css end -->
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="bootstrap/fontawesome/css/all.css" />
+
+    <!--Custom css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/mainCss/style.css" />
+
+     <script type="text/javascript">
+         function goToNewPage() {
+             var url = document.getElementById('list').value;
+             if (url != 'none') {
+                 window.location = url;
+             }
+         }
+</script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+             
+
+ <script type="text/javascript">
+     function goToNewPage() {
+         var url = document.getElementById('list').value;
+         if (url != 'none') {
+             window.location = url;
+         }
+     }
+</script>
+
+        <script type="text/javascript">
+            function disableRightClick() {
+                if (event.button == 2) {
+                    alert('For Security Reason Right Click is Disabled')
+                }
+            }
+            document.onmousedown = disableRightClick
+</script>
+
+        <script class="secret-source">
+            function disableRightClick() {
+                if (event.button == 2) {
+                    alert('For Security Reason Right Click is Disabled')
+                }
+            }
+            document.onmousedown = disableRightClick
+            jQuery(document).ready(function ($) {
+
+                $('#banner-slide').bjqs({
+                    animtype: 'slide',
+                    height: 280,
+                    width: 814,
+                    responsive: true,
+                    randomstart: true
+
+                });
+
+            });
+          </script>
+
+
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <div class="container-fluid">
+                <!-- upper links start -->
+                <div class="links">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="nav">
+                                <li class="nav-item"><a href="#">Directory</a></li>
+                                <li class="nav-item"><a href="Trustee_Board.aspx">Board of trustees</a></li>
+                                <li class="nav-item"><a href="http://webportal.easternuni.edu.bd:80/Calender/_AcademicCalendarSearch.aspx">Event Calender</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item"><a href="https://www.google.com/a/easternuni.edu.bd/ServiceLogin?service=mail&passive=true&rm=false&continue=http://mail.google.com/a/easternuni.edu.bd/&ltmpl=default&ltmplcache=2">Web Mail</a></li>
+                                <li class="nav-item"><a href="http://webportal.easternuni.edu.bd:80/staffs/_login.aspx">Employee Login</a></li>
+                                <li class="nav-item"><a href="http://webportal.easternuni.edu.bd:80/student/_login.aspx">Student Login</a></li>
+                                <li class="nav-item"><a href="http://webportal.easternuni.edu.bd:80/Online_Alumni/_login.aspx">Alumni Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- upper links ends -->
+                <div class="menu">
+                    <!-- University Name and logo in a single row start here-->
+                    <div class="img">
+                        <img id="topImage" style="height: 150px; width: 100%" class="img-fluid" src="image/Header/WebHeaderEU_New.png">
+                    </div>
+                    <!-- University Name and logo in a single row end here -->
+                </div>
+
+                <!--nav bar start here-->
+                <div id="menu_area" class="menu-area">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                                <a style="color: #fff; font-size: 20px; font-weight: bold; text-decoration: none;" href="HomeEU.aspx">Home <span class="sr-only">(current)</span></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+
+
+                                        <!-- About EU dropdown start here -->
+                                        <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="EU_Profile.aspx" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EU Profile</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Message from</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="Administration_OC.aspx"><span>Chairman</span></a></li>
+                                                            <li><a href="Administration_OVC.aspx"><span>Vice Chancellor</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="Trustee_Board.aspx"><span>Board of Trustees</span></a></li>
+                                                    <li><a href="FormerChairmen.aspx"><span>Former Chairmen of EU</span></a></li>
+                                                    <li><a href="AboutEU_Linkage.aspx"><span>International Academic Collaborations</span></a></li>
+                                                    <li><a href="AboutEU_Advisors.aspx"><span>International Advisors</span></a></li>
+                                                    <li><a href="Campus Map.aspx"><span>Campus Map</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </div>
+                                        <!-- About EU dropdown end here -->
+
+                                        <!-- Academics dropdown start here -->
+                                        <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="A2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academics</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academic Programs</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href=" Academics_UP.aspx "><span>Undergraduate</span></a></li>
+                                                            <li><a href="Academics_GP.aspx"><span>Graduate</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="Academics_Sys.aspx"><span>Academic Systems</span></a></li>
+                                                    <li><a href="Academics_Rules.aspx"><span>Academic Rules & Procedures</span></a></li>
+                                                    <li><a href="Academics_Reg.aspx"><span>Registration Procedures</span></a></li>
+                                                    <li><a href="Academics_ClsAtd.aspx"><span>Rules of Class Attendance</span></a></li>
+                                                    <li><a href="Academics_Exm.aspx"><span>Tests and Exams</span></a></li>
+                                                    <li><a href="Academics_Std.aspx"><span>Academic Standing of a Student</span></a></li>
+                                                    <li><a href="Academics_Degree.aspx"><span>Degree Requirements</span></a></li>
+                                                    <li><a href="EU_Conduct.aspx"><span>Code of Conduct of EU Students</span></a></li>
+
+
+                                                    <li><a href="http://webportal.easternuni.edu.bd:80/Calender/_AcademicCalendarSearch.aspx"><span>Academic Calendar</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </div>
+                                        <!-- Academics dropdown end here -->
+
+                                        <!-- Admission dropdown start here -->
+                                        <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="A4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admission</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a href="Admission_Overview.aspx"><span>Overview</span></a></li>
+                                                    <li><a href="http://webportal.easternuni.edu.bd:80/onlineadmission/index.aspx"><span>Online Admission Form</span></a></li>
+                                                    <li><a href="Admission_WEU.aspx"><span>Why Study at EU</span></a></li>
+
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admission Eligibility</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="Admission_UA.aspx"><span>Undergraduate Admission</span></a></li>
+                                                            <li><a href="Admission_GA.aspx"><span>Graduate Admission</span></a></li>
+                                                        </ul>
+                                                        <li><a href="Admission_TF.aspx"><span>Tuition and Fees</span></a></li>
+                                                        <li><a href="Admission_FAidSch.aspx"><span>Financial Aid & Scholarship</span></a></li>
+                                                        <!-- <li><a href="Admission_PResult.aspx"><span>Admission Results</span></a></li>
+            <li><a href="Admission_TutionFee.aspx"><span>Tution Fee Waiver</span></a></li> -->
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </div>
+                                        <!-- Admission dropdown end here -->
+
+                                        <!-- Administration dropdown start here -->
+                                        <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="A6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a href="Administration_G.aspx"><span>Governance</span></a></li>
+                                                    <li><a href="Administration_S.aspx"><span>Syndicate</span></a></li>
+                                                    <li><a href="Academic_Council.aspx"><span>Academic Council</span></a></li>
+                                                    <li><a href="Administration_keyPersonnel.aspx"><span>Key Personnel</span></a></li>
+                                                    <li><a href="Administration_Offices.aspx"><span>Offices</span></a></li>
+                                                    <li><a href="Administration_UC.aspx"><span>Other Committees</span></a></li>
+
+                                                </ul>
+                                            </li>
+                                        </div>
+                                        <!-- Administration dropdown end here -->
+
+                                        <!-- Faculties dropdown start here -->
+                                        <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="A7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculties</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                                    <!-- Faculty of Arts submenu start here-->
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A8" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty of Arts</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="Arts_Faculty.aspx"><span>Home</span></a></li>
+                                                            <li><a href="F_Arts.aspx"><span>Message from the Dean</span></a> </li>
+                                                            <li><a href="Administration_Arts.aspx"><span>Administration</span></a></li>
+                                                            <li><a href="Programs_Arts.aspx"><span>Programs</span></a></li>
+                                                            <li><a href="Faculty_Arts.aspx"><span>Faculty Members</span></a></li>
+                                                            <li class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" id="A9" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                    <li><a href="CourseENG.aspx"><span>Courses of B.A.(Hons.) in English</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+
+                                                    </li>
+                                                    <!-- Faculty of Arts submenu end here-->
+
+                                                    <!--Faculty of Business Administration submenu start here-->
+
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty of Business Administration</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="BBA_Faculty.aspx"><span>Home</span></a></li>
+                                                            <!-- <li><a href="F_BBA.aspx"><span>Message from the Dean</span></a> </li>-->
+                                                            <li><a href="Administration_BBA.aspx"><span>Administration</span></a></li>
+                                                            <li><a href="Programs_BA.aspx"><span>Programs</span></a></li>
+                                                            <li><a href="Faculty_BA.aspx"><span>Faculty Members</span></a></li>
+                                                            <li class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" id="A11" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                    <li><a href="CoursesBBA.aspx"><span>Courses of BBA (Bachelor of Business Administration)</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+
+                                                    </li>
+                                                    <!--Faculty of Business Administration submenu end here-->
+
+                                                    <!--Faculty of Engineering & Technology submenu start here-->
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty of Engineering & Technology</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="Eng_Faculty.aspx"><span>Home</span></a> </li>
+                                                            <li><a href="F_Engg.aspx"><span>Message from the Dean</span></a> </li>
+                                                            <li><a href="Administration_Eng.aspx"><span>Administration</span></a></li>
+                                                            <li><a href="Programs.aspx"><span>Programs</span></a></li>
+                                                            <li><a href="Faculty_Eng.aspx"><span>Faculty Members</span></a></li>
+                                                            <li class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" id="A13" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                    <li><a href="CourseCSE.aspx"><span>Courses of B.Sc. in CSE</span></a></li>
+                                                                    <li><a href="CourseEEE.aspx"><span>Courses of B.Sc. in EEE</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+
+                                                    </li>
+                                                    <!--Faculty of Engineering & Technology submenu end here-->
+
+                                                    <!--Faculty of Law submenu start here-->
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A14" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculty of Law</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="Law_Faculty.aspx"><span>Home</span></a> </li>
+                                                            <li><a href="F_Laws.aspx"><span>Message from the Dean</span></a> </li>
+                                                            <li><a href="Administration_Law.aspx"><span>Administration</span></a></li>
+                                                            <li><a href="Programs_Laws.aspx"><span>Programs</span></a></li>
+                                                            <li><a href="Faculty_Laws.aspx"><span>Faculty Members</span></a></li>
+                                                            <li class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" id="A15" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                    <li><a href="CourseLaws.aspx"><span>Courses of LL.B (Hons.)</span></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+
+                                                    </li>
+                                                    <!--Faculty of Law submenu end here-->
+                                                </ul>
+                                            </li>
+                                        </div>
+                                        <!-- Faculties dropdown end here -->
+
+                                        <!--IQAC dropdown start here-->
+                                        <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="A16" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IQAC</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a href="IQAC_Home.aspx"><span>IQAC Home</span></a></li>
+                                                    <li><a href="IQAC_Members.aspx"><span>Members</span></a></li>
+                                                    <li><a href="IQAC_Office.aspx"><span>Offices</span></a></li>
+                                                    <li><a href="IQAC_Goals.aspx"><span>Goals</span></a></li>
+                                                    <li><a href="IQAC_Resources.aspx"><span>Resources</span></a></li>
+                                                    <li><a href="IQAC_Events.aspx"><span>Event Schedule</span></a></li>
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A17" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="IQAC_DownloadsLinks.aspx"><span>Presentations</span></a></li>
+                                                            <li><a href="IQAC_DownloadsDocuments.aspx"><span>Documents</span></a></li>
+                                                        </ul>
+                                                        <li><a href="IQAC_PicGallery.aspx"><span>Picture Gallery</span></a></li>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </div>
+                                        <!--IQAC dropdown end here-->
+
+
+                                        <!--Services dropdown start here-->
+                                        <!--  <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="A18" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A19" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Career Service and International Office</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="Career_Service.aspx"><span>Career Services</span></a></li>
+                                                            <li><a href="Int_Office.aspx"><span>International Office</span></a></li>
+                                                        </ul>
+
+                                                    </li>
+
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A20" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Office of Student Affairs</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="StudentAffairs.aspx"><span>About the OSA</span></a></li>
+                                                            <li><a href="OSA_Core.aspx"><span>Core Values</span></a></li>
+                                                            <li><a href="OSA_Philosophy.aspx"><span>Core Philosophy</span></a></li>
+                                                            <li><a href="OSA_Activities.aspx"><span>Activities</span></a></li>
+                                                            <li><a href="OSA_Services.aspx"><span>Services</span></a></li>
+                                                            <li><a href="OSA_Clubs.aspx"><span>Clubs and Forums</span></a></li>
+                                                            <li><a href="OSA_Conduct.aspx"><span>Code of Conduct</span></a></li>
+                                                            <li><a href="OSA_CalenderEvents.aspx"><span>Calendar of Events</span></a></li>
+                                                        </ul>
+
+                                                    </li>
+
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" id="A21" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Photo Gallery</a>
+                                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <li><a href="PhotoGallery.aspx"><span>Photo Album</span></a></li>
+                                                            <li><a href="Photo_MathOlym.aspx"><span>Eastern University Math Olympiad</span></a></li>
+                                                        </ul>
+
+                                                    </li>
+                                                    <li><a href="Phy_Coucilling.aspx"><span>Psycho-Social Counselling</span></a></li>
+                                                    <li><a href="http://dspace.easternuni.edu.bd:8080/xmlui/bitstream/handle/12345/433/EU%20Newsletter%20Fall%202016.pdf?sequence=1&isAllowed=y"><span>Newsletter</span></a></li>
+
+                                                    <li><a href="Life_Campus_SC.aspx"><span>Co-curricular Activities</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </div> -->
+                                        <!--Services dropdown end here-->
+
+
+                                        <!--Libary dropdown start here-->
+                                        <!-- <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="A22" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Library</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li ><a href="http://library.easternuni.edu.bd/"><span>Library Home</span></a></li> 
+                <li ><a href="http://library.easternuni.edu.bd/ebook2"><span>e-Books</span></a></li>
+                <li><a href="http://library.easternuni.edu.bd/onlinejournals2"><span>Online Journals</span></a></li>
+
+<li><a href="http://dspace.easternuni.edu.bd:8080/xmlui/"><span>Institutional Repository</span></a></li>
+
+                                                </ul>
+                                            </li>
+                                        </div> -->
+                                        <!--Libary dropdown end here-->
+
+                                        <!--career dropdown start here-->
+                                        <li><a href="Career.aspx">Career</a></li>
+                                        <!--career dropdown end here-->
+
+                                        <!--Alumni dropdown start here-->
+                                        <div>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="A23" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alumni</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a href="http://webportal.easternuni.edu.bd:80/Online_Alumni/_login.aspx"><span>Registration Form</span></a></li>
+                                                    <li><a href="http://webportal.easternuni.edu.bd:80/Online_Alumni/_AlumniSearch.aspx"><span>Web Directory</span></a></li>
+
+                                                </ul>
+                                            </li>
+                                        </div>
+                                        <!--Alumni dropdown end here-->
+
+                                        <!--contact us dropdown start here-->
+                                        <li><a href="Contact Us.aspx">Contact Us</a></li>
+                                        <!--contact us dropdown end here-->
+
+
+
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- nav bar end here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!-- middle part goes here -->
+    <div id="middle_body">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+
+
+
+
+     <!--Footer start here -->
+                <footer id="footer">
+                    <div class="site-footer">
+                        <div class="container-fluid footerFlex">
+                            <div class="footer-into mr-3">
+                                <h3>Eastern University</h3>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    House 26, Road 5<br />
+                                    Dhanmondi, Dhaka-1205<br />
+                                    <i class="fas fa-mobile-alt"></i>+88029676031-5<br />
+                                    <i class="fas fa-fax"></i>+8802967 5981<br />
+                                    <i class="far fa-envelope"></i>info@easternuni.edu.bd,
+                                        <br />
+                                    registrar@easternuni.edu.bd
+                                </p>
+                            </div>
+                            <div class="footer-links">
+                                <h6>About EU</h6>
+                                <ul class="footer-links">
+                                    <li><i class="fas fa-arrow-right"></i><a href="EU_Profile.aspx">EU Profile</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Trustee_Board.aspx">Board of Trustees</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Administration_OC.aspx">Message From the Chairman</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Administration_OVC.aspx">Message From the Vice-Chancellor</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="AboutEU_Advisors.aspx">International Advisors</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="AboutEU_Linkage.aspx">International Academic Linkages</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Campus Map.aspx">Campus Map</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Contact Us.aspx">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h6>Admission</h6>
+                                <ul class="footer-links">
+                                    <li><i class="fas fa-arrow-right"></i><a href="Admission_Overview.aspx">Overview</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Admission_WEU.aspx">Why Study at EU</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Admission_UA.aspx">Undergraduate Admission</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Admission_GA.aspx">Graduate Admission</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Admission_TF.aspx">Tuition and Fees</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Admission_FAidSch.aspx">Financial Aid & Scholarship</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="footer-links">
+                                <h6>Academics</h6>
+                                <ul class="footer-links">
+                                    <li><i class="fas fa-arrow-right"></i><a href="Academics_Rules.aspx">Academic Rules & Procedures</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Academics_Reg.aspx">Registration Procedures</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Academics_ClsAtd.aspx">Rules of Class Attendance</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Admission_GA.aspx">Graduate Admission</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Academics_Exm.aspx">Tests and Exams</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Academics_Std.aspx">Academic Standing of a Student</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Academics_Degree.aspx">Degree Requirements</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Academics_UP.aspx">Undergraduate Programs</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Academics_GP.aspx">Graduate Programs</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h6>Faculties</h6>
+                                <ul class="footer-links">
+                                    <li><i class="fas fa-arrow-right"></i><a href="Arts_Faculty.aspx">Faculty of Arts</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="BBA_Faculty.aspx">Faculty of Business Administration</a></li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Eng_Faculty.aspx">Faculty of Engineering</li>
+                                    <li><i class="fas fa-arrow-right"></i><a href="Law_Faculty.aspx">Faculty of Law</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                    <p class="copyright-text">
+                                        Copyright &copy; 2019 All Rights Reserved by 
+         <a href="#">EUIT</a>.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <ul class="social-icons">
+                                        <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                                        <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!--Footer end here -->
+
+
+  
+
+
+
+
+
+
+
+</div>
+ <!-- container End here -->
+            <script src="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+            <script src="bootstrap/js/popper.min.js"></script>
+            <script src="bootstrap/js/bootstrap.min.js"></script>
+
+            <!-- for owl carousel news and events -->
+            <script type="text/javascript" src="../bootstrap/owlcarousel/js/owl.carousel.min.js"></script>
+            <script type="text/javascript" src="../bootstrap/owlcarousel/js/owl.js"></script>
+
+            <!--For chart-->
+            <script src="bootstrap/js/chart.js"></script>
+
+            <!--Mainpage js-->
+            <script src="bootstrap/js/mainPage.js"></script>
+            </div>
+
+       
+
+    </form>
+</body>
+</html>

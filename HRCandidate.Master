@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HRCandidate.master.cs" Inherits="Eastern_Uni.HRCandidate" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Welcome to Eastern University</title>
+
+      <link href="CSS/Candidate.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+              <div id="banner">
+                  <table style="width:100%">
+                      <tr>
+                          <td>
+                              <img src="Admins/Data/EU Logo.png"  style="z-index:100; text-align: center; width:250px"  alt="Welcome to Eastern University"/> </td>
+                          <td style="text-align: right;">
+                              welcome to eastern university
+                              <a href="HR_CandLogin.aspx" style="text-decoration: none;" onmousemove="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"><span style="margin-right:25px">Logout</span></a> 
+
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+
+
+         <div id="menu">
+
+
+        <div id='cssmenu'>
+            <ul>
+                <li id="AdminHome"><a href='HR_CandidateForm.aspx'><span>Home</span></a></li>
+                <li id="Li1"><a href='HR_CanEduTrain.aspx'><span>Education/ Training</span></a></li>
+                <li id="Li2"><a href='HR_CanExperience.aspx'><span>Job Experience</span></a></li>
+                  <li id="Li4"><a href='HR_CanPublication.aspx'><span>Publication</span></a></li>
+                <li id="Li3"><a href='HR_CandImage.aspx'><span>Upload Image</span></a></li>
+                 <li id="Li5"><a href='HR_CandAppPost.aspx'><span>Applied Post</span></a></li>
+                </ul>
+            </div>
+
+             </div>
+        <div id="content_place">
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+            </div>
+    </div>
+    </form>
+</body>
+</html>
